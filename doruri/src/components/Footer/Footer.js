@@ -37,7 +37,7 @@ export default function Footer(props) {
                 className={classes.block}
                 target="_blank"
               >
-                Creative Tim
+                문의하기
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
@@ -46,10 +46,10 @@ export default function Footer(props) {
                 className={classes.block}
                 target="_blank"
               >
-                About us
+                개발자
               </a>
             </ListItem>
-            <ListItem className={classes.inlineBlock}>
+            {/* <ListItem className={classes.inlineBlock}>
               <a
                 href="http://blog.creative-tim.com/?ref=mkr-footer"
                 className={classes.block}
@@ -66,11 +66,12 @@ export default function Footer(props) {
               >
                 Licenses
               </a>
-            </ListItem>
+            </ListItem> */}
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
+          &copy; {2020} 소프트웨어개발보안대회 강식당팀
+          {/* , made with{"강식"}
           <Favorite className={classes.icon} /> by{" "}
           <a
             href="https://www.creative-tim.com?ref=mkr-footer"
@@ -79,7 +80,7 @@ export default function Footer(props) {
           >
             Creative Tim
           </a>{" "}
-          for a better web.
+          for a better web. */}
         </div>
       </div>
     </footer>

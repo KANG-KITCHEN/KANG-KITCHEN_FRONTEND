@@ -8,6 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
+
 import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
@@ -15,12 +16,15 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
+import Logo from "assets/img/miniLogo.png";
+import { BrandingWatermarkRounded } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
-
+ 
 export default function Header(props) {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  
   React.useEffect(() => {
     if (props.changeColorOnScroll) {
       window.addEventListener("scroll", headerColorChange);
@@ -36,7 +40,9 @@ export default function Header(props) {
   };
   const headerColorChange = () => {
     const { color, changeColorOnScroll } = props;
+    //console.log(props);
     const windowsScrollTop = window.pageYOffset;
+    //document.body.getElementsByTagName("header")[0].classList.add(classes[changeColorOnScroll.color]);
     if (windowsScrollTop > changeColorOnScroll.height) {
       document.body
         .getElementsByTagName("header")[0]
@@ -54,13 +60,17 @@ export default function Header(props) {
     }
   };
   const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
+  //console.log(rightLinks);
   const appBarClasses = classNames({
     [classes.appBar]: true,
     [classes[color]]: color,
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   });
-  const brandComponent = <Button className={classes.title}>{brand}</Button>;
+  const brandComponent = <Button className="Logo_image">{<img src={Logo} lat="logo"/>}</Button>;
+  //<img src={Logo} alt="logo"/>;
+    //<img width="100%" height="100%" src={Logo} alt="logo"></img>;`
+    
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>

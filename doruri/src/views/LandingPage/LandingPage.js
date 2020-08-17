@@ -3,7 +3,9 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
 
 // core components
@@ -32,10 +34,30 @@ export default function LandingPage(props) {
   return (
     <div>
       <Header
-        color="transparent"
+        brand="DORURI"
         routes={dashboardRoutes}
-        brand="Material Kit React"
-        rightLinks={<HeaderLinks />}
+        rightLinks={
+          <List className={classes.list}>
+            <Button
+              href="#pablo"
+              className={classes.navLink}
+              onClick={e => e.preventDefault()}
+              color="transparent"
+            >
+              SIGN IN
+              </Button>
+            <Button
+              href="#pablo"
+              className={classes.registerNavLink}
+              onClick={e => e.preventDefault()}
+              color="default"
+              round
+            >
+              SIGN UP
+              </Button>
+          </List>
+        }
+        //rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
           height: 400,
