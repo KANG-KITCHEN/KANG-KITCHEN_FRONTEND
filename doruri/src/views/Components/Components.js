@@ -15,6 +15,13 @@ import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
+
+// add section
+import SectionSearch from "./Sections/SectionSearch.js";
+import SectionInfo from "./Sections/SectionInfo.js";
+import SectionDatas from "./Sections/SectionDatas.js";
+import SectionBoard from "./Sections/SectionBoard.js";
+
 import SectionBasics from "./Sections/SectionBasics.js";
 import SectionNavbars from "./Sections/SectionNavbars.js";
 import SectionTabs from "./Sections/SectionTabs.js";
@@ -28,6 +35,7 @@ import SectionLogin from "./Sections/SectionLogin.js";
 import SectionExamples from "./Sections/SectionExamples.js";
 import SectionDownload from "./Sections/SectionDownload.js";
 
+
 import styles from "assets/jss/material-kit-react/views/components.js";
 
 const useStyles = makeStyles(styles);
@@ -35,6 +43,7 @@ const useStyles = makeStyles(styles);
 export default function Components(props) {
   const classes = useStyles();
   const { ...rest } = props;
+
   return (
     <div>
       <Header
@@ -48,22 +57,24 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/bg4.jpg")}>
+      <Parallax image={require("assets/img/bg3.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Material Kit React.</h1>
-                <h3 className={classes.subtitle}>
-                  A Badass Material-UI Kit based on Material Design.
-                </h3>
+                <h1 className={classes.title}>Project Title</h1>
+                <h3 className={classes.subtitle}>text...</h3>
               </div>
+              <SectionSearch />
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
+        <SectionDatas />
+        <SectionInfo />
+        <SectionBoard />
         <SectionBasics />
         <SectionNavbars />
         <SectionTabs />
@@ -74,16 +85,17 @@ export default function Components(props) {
         <SectionCarousel />
         <SectionCompletedExamples />
         <SectionLogin />
+
         <GridItem md={12} className={classes.textCenter}>
           <Link to={"/login-page"} className={classes.link}>
-            <Button color="primary" size="lg" simple>
-              View Login Page
-            </Button>
+            <Button color="primary" size="lg" simple>View Login Page</Button>
           </Link>
         </GridItem>
+
         <SectionExamples />
         <SectionDownload />
       </div>
+
       <Footer />
     </div>
   );

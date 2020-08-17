@@ -25,7 +25,7 @@ export default function SectionTabs() {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <h3>
-                <small>Tabs with Icons on Card</small>
+              <small>Tabs with Icons on Card</small>
               </h3>
               <CustomTabs
                 headerColor="primary"
@@ -80,7 +80,7 @@ export default function SectionTabs() {
                   }
                 ]}
               />
-            </GridItem>
+              </GridItem>
             <GridItem xs={12} sm={12} md={6}>
               <h3>
                 <small>Tabs on Plain Card</small>
@@ -135,11 +135,11 @@ export default function SectionTabs() {
                     )
                   }
                 ]}
-              />
-            </GridItem>
-          </GridContainer>
+                />
+              </GridItem>
+            </GridContainer>
+          </div>
         </div>
       </div>
-    </div>
-  );
-}
+    );
+  }

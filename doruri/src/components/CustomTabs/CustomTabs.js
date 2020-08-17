@@ -50,8 +50,8 @@ export default function CustomTabs(props) {
                   typeof prop.tabIcon === "string" ? (
                     <Icon>{prop.tabIcon}</Icon>
                   ) : (
-                    <prop.tabIcon />
-                  )
+                      <prop.tabIcon />
+                    )
               };
             }
             return (

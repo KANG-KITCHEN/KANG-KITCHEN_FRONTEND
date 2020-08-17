@@ -15,6 +15,21 @@ const useStyles = makeStyles(styles);
 
 export default function CustomInput(props) {
   const classes = useStyles();
+  var text = "";
+
+  const onClick = () => {    
+    console.log(`hell yeah ${text}`);
+    alert(`${text}`);
+    return text;
+  };
+  
+  const onKeyPress = (e) => {
+    text = e.target.value;
+    if(e.key === 'Enter') {
+        onClick();
+    }
+  };
+
   const {
     formControlProps,
     labelText,
@@ -64,7 +79,7 @@ export default function CustomInput(props) {
           {labelText}
         </InputLabel>
       ) : null}
-      <Input
+      <Input onKeyPress={onKeyPress}
         classes={{
           input: inputClasses,
           root: marginTop,
