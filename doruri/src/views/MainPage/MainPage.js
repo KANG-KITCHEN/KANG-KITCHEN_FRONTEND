@@ -45,14 +45,13 @@ export default function InfoPage(props) {
                             href="#pablo"
                             className={classes.registerNavLink}
                             onClick={e => e.preventDefault()}
-                            color="default"
+                            color="green"
                             round
                         >
                             SIGN UP
               </Button>
                     </List>
                 }
-                //rightLinks={<HeaderLinks />}
                 fixed
                 changeColorOnScroll={{
                     height: 400,

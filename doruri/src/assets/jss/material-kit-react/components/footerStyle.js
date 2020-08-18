@@ -4,8 +4,8 @@ const footerStyle = {
   block: {
     color: "inherit",
     padding: "0.9375rem",
-    fontWeight: "500",
-    fontSize: "12px",
+    fontWeight: "800",
+    fontSize: "13px",
     textTransform: "uppercase",
     borderRadius: "3px",
     textDecoration: "none",
@@ -35,7 +35,7 @@ const footerStyle = {
   },
   footerWhiteFont: {
     "&,&:hover,&:focus": {
-      color: "#FFFFFF"
+      color: "#FFFFF"
     }
   },
   container,

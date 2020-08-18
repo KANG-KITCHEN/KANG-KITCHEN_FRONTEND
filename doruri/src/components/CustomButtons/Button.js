@@ -63,6 +63,7 @@ RegularButton.propTypes = {
     "danger",
     "rose",
     "white",
+    "green",
     "facebook",
     "twitter",
     "google",

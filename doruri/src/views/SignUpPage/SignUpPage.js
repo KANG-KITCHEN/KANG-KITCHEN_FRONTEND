@@ -1,6 +1,6 @@
 import React from "react";
 // nodejs library that concatenates classes
-import classNames from "classnames";
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
@@ -17,25 +17,14 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
-import InfoSection from "./Sections/InfoSection.js";
-import SearchSection from "../Components/Sections/SectionSearch.js";
+import WorkSection from "./Sections/WorkSection.js";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
 
-function datas(props) {
-    return (
-        <div>
-            <InfoSection />
-        </div>
-    );
-}
-
-export default function InfoPage(props) {
+export default function SignUpPage(props) {
     const classes = useStyles();
-    const viewCheck = true;
     const { ...rest } = props;
-
     return (
         <div>
             <Header
@@ -69,27 +58,15 @@ export default function InfoPage(props) {
                 }}
                 {...rest}
             />
-            <Parallax image={require("assets/img/bg3.jpg")}>
+            <Parallax image={require("assets/img/bg8.jpg")}>
                 <div className={classes.container}>
                     <GridContainer>
                         <GridItem>
-                            <div className={classes.brand}>
-                                <h1 className={classes.title}>Project Title</h1>
-                                <h3 className={classes.subtitle}>info...</h3>
-                            </div>
-                            <SearchSection />
+                            <WorkSection />
                         </GridItem>
                     </GridContainer>
                 </div>
             </Parallax>
-
-            <div className={classNames(classes.main, classes.mainRaised)}>
-                {viewCheck
-                    ? datas(props)
-                    : alert("False")
-                }
-            </div>
-
             <Footer />
         </div>
     );
