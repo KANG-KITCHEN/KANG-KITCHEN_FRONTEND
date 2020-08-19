@@ -15,6 +15,7 @@
  */
 
 import { formatDiagnostic } from "typescript";
+import "../../index.css";
 
 // ##############################
 // // // Variables - Styles that are used on more than one component
@@ -66,7 +67,7 @@ const card = {
 };
 
 const defaultFont = {
-  fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+  fontFamily: "Spoqa Han Sans",
   fontWeight: "300",
   lineHeight: "1.5em"
 };
@@ -104,6 +105,10 @@ const dangerBoxShadow = {
 const roseBoxShadow = {
   boxShadow:
     "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4)"
+};
+const greenBoxShadow = {
+  boxShadow:
+  "0 14px 26px -12px rgba(144, 204, 159, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(144, 204, 159, 0.2)"
 };
 
 const warningCardHeader = {
@@ -164,7 +169,7 @@ const title = {
   margin: "1.75rem 0 0.875rem",
   textDecoration: "none",
   fontWeight: "700",
-  fontFamily: `"Roboto Slab", "Times New Roman", serif`
+  fontFamily: "Spoqa Han Sans"
 };
 
 const cardTitle = {
@@ -207,6 +212,7 @@ export {
   warningBoxShadow,
   dangerBoxShadow,
   roseBoxShadow,
+  greenBoxShadow,
   warningCardHeader,
   successCardHeader,
   dangerCardHeader,

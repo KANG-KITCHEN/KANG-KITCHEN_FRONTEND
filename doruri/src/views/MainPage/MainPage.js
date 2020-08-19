@@ -1,4 +1,5 @@
 import React from "react";
+import "../../index.css";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -10,7 +11,7 @@ import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
+import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
@@ -31,27 +32,7 @@ export default function InfoPage(props) {
             <Header
                 brand="DORURI"
                 routes={dashboardRoutes}
-                rightLinks={
-                    <List className={classes.list}>
-                        <Button
-                            href="#pablo"
-                            className={classes.navLink}
-                            onClick={e => e.preventDefault()}
-                            color="transparent"
-                        >
-                            SIGN IN
-              </Button>
-                        <Button
-                            href="#pablo"
-                            className={classes.registerNavLink}
-                            onClick={e => e.preventDefault()}
-                            color="green"
-                            round
-                        >
-                            SIGN UP
-              </Button>
-                    </List>
-                }
+                rightLinks={ <HeaderLinks /> }
                 fixed
                 changeColorOnScroll={{
                     height: 400,
@@ -64,8 +45,8 @@ export default function InfoPage(props) {
                     <GridContainer>
                         <GridItem>
                             <div className={classes.brand}>
-                                <h1 className={classes.title}>DORULI</h1>
-                                <h3 className={classes.subtitle}>위험한 것인지 알아봐</h3>
+                                <h1 className={classes.title}>도르리</h1>
+                                <h3 className={classes.subtitle}>도르리 설명ㅇㅇㅇㅇ </h3>
                             </div>
                             <SearchSection />
                         </GridItem>
