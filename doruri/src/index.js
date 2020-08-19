@@ -12,6 +12,9 @@ import BoardPage from "views/BoardPage/BoardPage.js";
 import MainPage from "views/MainPage/MainPage.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
 import SignUpPage from "views/SignUpPage/SignUpPage.js";
+import SignInPage from "views/SignInPage/SignInPage.js";
+import LandingPage from "views/LandingPage/LandingPage.js";
+import Component from "views/Components/Components.js";
 
 var hist = createBrowserHistory();
 
@@ -23,6 +26,9 @@ ReactDOM.render(
       <Route path="/board-page" component={BoardPage} />
       <Route path="/info-page" component={InfoPage} />
       <Route path="/signup-page" component={SignUpPage} />
+      <Route path="/signin-page" component={SignInPage} />
+      <Route path="/landing-page" component={LandingPage} />
+      <Route path="/component" component={Component} />
     </Switch>
   </Router>,
   document.getElementById("root")

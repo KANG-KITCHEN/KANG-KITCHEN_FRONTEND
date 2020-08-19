@@ -14,6 +14,8 @@
 
  */
 
+import { formatDiagnostic } from "typescript";
+
 // ##############################
 // // // Variables - Styles that are used on more than one component
 // #############################
@@ -77,6 +79,7 @@ const infoColor = "#00acc1";
 const roseColor = "#e91e63";
 const grayColor = "#999999";
 const greenColor = "#9BCC9F";
+const yellowColor = "#FAE300";
 
 const primaryBoxShadow = {
   boxShadow:
@@ -197,6 +200,7 @@ export {
   roseColor,
   grayColor,
   greenColor,
+  yellowColor,
   primaryBoxShadow,
   infoBoxShadow,
   successBoxShadow,

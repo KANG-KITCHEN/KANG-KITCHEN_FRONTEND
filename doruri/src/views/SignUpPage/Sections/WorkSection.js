@@ -19,7 +19,7 @@ export default function WorkSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
-          <h2 className={classes.title}>SIGN IN</h2>
+          <h2 className={classes.title}>SIGN UP</h2>
           <form>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={4}>
@@ -61,7 +61,17 @@ export default function WorkSection() {
             </GridContainer>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={2}>
-                <Button color="green">SIGN IN</Button>
+                <Button color="green">SIGN UP</Button>
+              </GridItem>
+            </GridContainer>
+            <GridContainer justify="center">
+              <GridItem xs={12} sm={12} md={10}>
+                <hr class="line"></hr>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={3}>
+                <section>
+                  <Button color="yellow">카카오로 시작하기</Button>
+                </section>
               </GridItem>
             </GridContainer>
           </form>

@@ -22,6 +22,9 @@ const workStyle = {
   textArea: {
     marginRight: "15px",
     marginLeft: "15px"
+  },
+  line: {
+    color: "rose"
   }
 };
 

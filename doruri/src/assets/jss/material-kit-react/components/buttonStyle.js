@@ -6,7 +6,8 @@ import {
   successColor,
   warningColor,
   dangerColor,
-  greenColor
+  greenColor,
+  yellowColor
 } from "assets/jss/material-kit-react.js";
 
 const buttonStyle = {
@@ -149,6 +150,18 @@ const buttonStyle = {
       backgroundColor: greenColor,
       boxShadow:
         "0 14px 26px -12px rgba(144, 204, 159, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(144, 204, 159, 0.2)"
+    }
+  },
+  yellow: {
+    backgroundColor: yellowColor,
+    color: "#3C1E1E",
+    boxShadow:
+      "0 2px 2px 0 rgba(250, 227, 0, 0.14), 0 3px 1px -2px rgba(250, 227, 0, 0.2), 0 1px 5px 0 rgba(250, 227, 0, 0.12)",
+    "&:hover,&:focus": {
+      backgroundColor: yellowColor,
+      color: "#3C1E1E",
+      boxShadow:
+        "0 14px 26px -12px rgba(250, 227, 0, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(250, 227, 0, 0.2)"
     }
   },
   twitter: {

@@ -59,13 +59,13 @@ export default function InfoPage(props) {
                 }}
                 {...rest}
             />
-            <Parallax image={require("assets/img/bg3.jpg")}>
+            <Parallax image={require("assets/img/mainbg.jpg")}>
                 <div className={classes.container}>
                     <GridContainer>
                         <GridItem>
                             <div className={classes.brand}>
-                                <h1 className={classes.title}>Project Title</h1>
-                                <h3 className={classes.subtitle}>main...</h3>
+                                <h1 className={classes.title}>DORULI</h1>
+                                <h3 className={classes.subtitle}>위험한 것인지 알아봐</h3>
                             </div>
                             <SearchSection />
                         </GridItem>
