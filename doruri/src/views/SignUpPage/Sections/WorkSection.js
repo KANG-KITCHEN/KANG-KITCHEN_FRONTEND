@@ -73,10 +73,12 @@ export default function WorkSection() {
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={4}>
                 <section>
-                  <Button color="yellow" fullWidth="true" round="true">
-                    <img src={kakaoIcon} lat="kakaoIcon"/> 
-                    카카오로 시작하기
-                  </Button>
+                  <a href="http://localhost:8080/oauth2/authorization/kakao">
+                    <Button color="yellow" fullWidth="true" round="true">
+                      <img src={kakaoIcon} lat="kakaoIcon"/> 
+                      카카오로 시작하기
+                    </Button>
+                  </a>
                 </section>
               </GridItem>
             </GridContainer>

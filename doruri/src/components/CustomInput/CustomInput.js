@@ -10,21 +10,18 @@ import InputLabel from "@material-ui/core/InputLabel";
 import Input from "@material-ui/core/Input";
 
 import styles from "assets/jss/material-kit-react/components/customInputStyle.js";
-
 const useStyles = makeStyles(styles);
 
 export default function CustomInput(props) {
   const classes = useStyles();
-  var text = "";
+  var product = "";
 
   const onClick = () => {    
-    console.log(`hell yeah ${text}`);
-    alert(`${text}`);
-    return text;
+    return product;
   };
   
   const onKeyPress = (e) => {
-    text = e.target.value;
+    product = e.target.value;
     if(e.key === 'Enter') {
         onClick();
     }
