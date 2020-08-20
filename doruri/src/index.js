@@ -20,6 +20,8 @@ import AboutPage from "views/AboutPage/AboutPage.js";
 import Component from "views/Components/Components.js";
 import ProfilePage from "views/ProfilePage/ProfilePage.js";
 import AllergyModal from "views/MainPage/Sections/AllergyModal.js";
+import SearchPage from "views/MainPage/SearchPage.js";
+import DetailPage from "views/MainPage/DetailPage.js";
 
 var hist = createBrowserHistory();
 
@@ -44,6 +46,8 @@ ReactDOM.render(
         <Route path="/profile-page" component={ProfilePage} />
         <Route path="/component" component={Component} />
         <Route path="/test" component={AllergyModal} />
+        <Route path="/search-page" component={SearchPage} />
+        <Route path="/detail-page" component={DetailPage} />
       </Switch>
     </Router>
   </MuiThemeProvider>

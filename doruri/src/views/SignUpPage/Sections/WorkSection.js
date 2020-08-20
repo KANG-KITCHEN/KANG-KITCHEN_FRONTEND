@@ -62,7 +62,7 @@ export default function WorkSection() {
             </GridContainer>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={2}>
-                <Button color="green">SIGN UP</Button>
+                <Button className="btnSign" color="green">SIGN UP</Button>
               </GridItem>
             </GridContainer>
             <GridContainer justify="center">

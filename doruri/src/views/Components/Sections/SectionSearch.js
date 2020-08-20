@@ -40,7 +40,8 @@ export default function SectionSearch({text}) {
                 <GridContainer justify="center">
                     <GridItem xs={12} sm={4} md={4} lg={10}>
                         <CustomInput
-                            labelText="제품명을 입력하세요"
+                            className = "searchKeyword"
+                            labelText="제품명이나 사이트 주소를 입력하세요"
                             id="font-awesome"
                             gray
                             default
