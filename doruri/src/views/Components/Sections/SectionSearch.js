@@ -31,7 +31,7 @@ import SearchIcon from '@material-ui/icons/Search';
 const useStyles = makeStyles(styles);
 
 
-export default function SectionSearch({text}) {
+export default function SectionSearch({ text }) {
     const classes = useStyles();
 
     return (
@@ -40,7 +40,7 @@ export default function SectionSearch({text}) {
                 <GridContainer justify="center">
                     <GridItem xs={12} sm={4} md={4} lg={10}>
                         <CustomInput
-                            className = "searchKeyword"
+                            className="searchKeyword"
                             labelText="제품명이나 사이트 주소를 입력하세요"
                             id="font-awesome"
                             gray
@@ -57,6 +57,6 @@ export default function SectionSearch({text}) {
                     </GridItem>
                 </GridContainer>
             </div>
-        </div>        
+        </div>
     );
 }

@@ -8,15 +8,28 @@ import { makeStyles } from "@material-ui/core/styles";
 import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 import Input from "@material-ui/core/Input";
-
+import Search from "views/MainPage/Sections/Search.js";
 import styles from "assets/jss/material-kit-react/components/customInputStyle.js";
 const useStyles = makeStyles(styles);
 
 export default function CustomInput(props) {
-  const classes = useStyles();
-  var product = "";
+    const classes = useStyles();
+    var product = "";
+  
+  function getInformation() {
+    fetch(
+      `http://openapi.foodsafetykorea.go.kr/api/867f3dd43c874330b921/C002/json/1/100/PRDLST_NM=${product}`
+    ).then(function(reponse){
+      return reponse.json();
+    }).then(function(json){
+      console.log(json);
+    })
+  }
 
-  const onClick = () => {    
+  const onClick = () => {   
+    //<Search PRDLIST_NM={product} /> 
+    //console.log({props});
+    getInformation();
     return product;
   };
   
