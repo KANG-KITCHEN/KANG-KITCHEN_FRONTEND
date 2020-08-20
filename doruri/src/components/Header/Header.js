@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // nodejs library to set properties for components
@@ -67,7 +68,7 @@ export default function Header(props) {
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   });
-  const brandComponent = <Button className="Logo_image">{<img src={Logo} lat="logo"/>}</Button>;
+  const brandComponent = <Link to="/"><Button className="Logo_image">{<img src={Logo} lat="logo"/>}</Button></Link>;
   //<img src={Logo} alt="logo"/>;
     //<img width="100%" height="100%" src={Logo} alt="logo"></img>;`
     

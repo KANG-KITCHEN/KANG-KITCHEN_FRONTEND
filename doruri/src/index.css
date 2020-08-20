@@ -1,16 +1,21 @@
 body {
   margin: 0;
-  font-family: "Spoqa Han Sans";
+  font-family: "Spoqa Han Sans", "Spoqa Han Sans B";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: "Spoqa Han Sans",
+  font-family: "Spoqa Han Sans R", "Spoqa Han Sans B",
     monospace;
 }
 
 @font-face{
-  font-family: "Spoqa Han Sans";
+  font-family: "Spoqa Han Sans R";
   src: url(./assets/fonts/Spoqa\ Han\ Sans\ Regular.ttf) format('truetype');
+}
+
+@font-face{
+  font-family: "Spoqa Han Sans B";
+  src: url(./assets/fonts/Spoqa\ Han\ Sans\ Bold.ttf) format('truetype');
 }

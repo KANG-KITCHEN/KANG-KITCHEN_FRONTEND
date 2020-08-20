@@ -45,7 +45,6 @@ export default function ProfilePage(props) {
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
     <div>
-
       <Header
         color="transparent"
         brand="Material Kit React"

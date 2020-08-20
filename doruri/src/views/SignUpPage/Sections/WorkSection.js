@@ -10,6 +10,7 @@ import GridItem from "components/Grid/GridItem.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
 import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
+import kakaoIcon from "assets/img/Kakao_logo.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -68,9 +69,14 @@ export default function WorkSection() {
               <GridItem xs={12} sm={12} md={10}>
                 <hr class="line"></hr>
               </GridItem>
-              <GridItem xs={12} sm={12} md={3}>
+            </GridContainer>
+            <GridContainer justify="center">
+              <GridItem xs={12} sm={12} md={4}>
                 <section>
-                  <Button color="yellow">카카오로 시작하기</Button>
+                  <Button color="yellow" fullWidth="true" round="true">
+                    <img src={kakaoIcon} lat="kakaoIcon"/> 
+                    카카오로 시작하기
+                  </Button>
                 </section>
               </GridItem>
             </GridContainer>

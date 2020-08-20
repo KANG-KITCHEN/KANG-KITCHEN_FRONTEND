@@ -36,32 +36,32 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={MenuIcon}
           dropdownList={[
-            <Link to="/signup-page" className={classes.dropdownLink}>위해 등급</Link>,
-            <Link to="/signup-page" className={classes.dropdownLink}>최근 회수 및 판매 중지 식품</Link>
+            <Link to="/about-page" className={classes.dropdownLink}>위해식품 등급 산정 기준</Link>,
+            <Link to="/board-page" className={classes.dropdownLink}>최근 회수 및 판매 중지 식품</Link>
           ]}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
+        <Link to="/signin-page">
         <Button
-          href="#pablo"
           className={classes.navLink}
-          onClick={e => e.preventDefault()}
           color="transparent"
         >
           SIGN IN
         </Button>
+        </Link>
       </ListItem>
 
       <ListItem className={classes.listItem}>
+      <Link to="/signup-page">
         <Button
-          href="#pablo"
           className={classes.registerNavLink}
-          onClick={e => e.preventDefault()}
           color="green"
           round
         >
           SIGN UP
         </Button>
+      </Link>
       </ListItem>
     </List>
   );

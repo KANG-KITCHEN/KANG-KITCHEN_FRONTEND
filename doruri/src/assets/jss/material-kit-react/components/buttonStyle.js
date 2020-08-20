@@ -74,7 +74,8 @@ const buttonStyle = {
     }
   },
   fullWidth: {
-    width: "100%"
+    width: "100%",
+    fontSize: "15px"
   },
   primary: {
     backgroundColor: primaryColor,
@@ -282,13 +283,13 @@ const buttonStyle = {
   },
   lg: {
     padding: "1.125rem 2.25rem",
-    fontSize: "0.875rem",
+    fontSize: "0.975rem",
     lineHeight: "1.333333",
     borderRadius: "0.2rem"
   },
   sm: {
     padding: "0.40625rem 1.25rem",
-    fontSize: "0.6875rem",
+    fontSize: "0.8875rem",
     lineHeight: "1.5",
     borderRadius: "0.2rem"
   },
@@ -316,16 +317,16 @@ const buttonStyle = {
       marginRight: "0px"
     },
     "&$lg": {
-      height: "57px",
-      minWidth: "57px",
-      width: "57px",
+      height: "32px",
+      minWidth: "200px",
+      width: "200px",
       lineHeight: "56px",
       "& .fab,& .fas,& .far,& .fal,& .material-icons": {
         fontSize: "32px",
         lineHeight: "56px"
       },
       "& svg": {
-        width: "32px",
+        width: "200px",
         height: "32px"
       }
     },

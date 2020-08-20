@@ -37,7 +37,7 @@ const headerLinksStyle = theme => ({
     padding: "0 !important"
   },
   navLink: {
-    color: "inherit",
+    color: "#2d3436",
     position: "relative",
     padding: "0.9375rem",
     fontWeight: "400",

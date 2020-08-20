@@ -23,6 +23,9 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 //import Badge from "components/Badge/Badge.js";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.js";
+import { Icon } from "@material-ui/core";
+import IconButton from '@material-ui/core/IconButton';
+import SearchIcon from '@material-ui/icons/Search';
 
 
 const useStyles = makeStyles(styles);
@@ -35,16 +38,21 @@ export default function SectionSearch({text}) {
         <div className={classes.sections}>
             <div className={classes.container}>
                 <GridContainer justify="center">
-                    <GridItem xs={12} sm={4} md={4} lg={12}>
+                    <GridItem xs={12} sm={4} md={4} lg={10}>
                         <CustomInput
-                            labelText="검색은 여기서"
+                            labelText="제품명을 입력하세요"
                             id="font-awesome"
-                            success
-                            white
+                            gray
+                            default
                             formControlProps={{
                                 fullWidth: true
                             }}
                         />
+                    </GridItem>
+                    <GridItem xs={12} sm={4} md={4} lg={2}>
+                        <IconButton aria-label="search">
+                            <SearchIcon />
+                        </IconButton>
                     </GridItem>
                 </GridContainer>
             </div>

@@ -4,7 +4,8 @@ import {
   infoColor,
   successColor,
   warningColor,
-  dangerColor
+  dangerColor,
+  greenColor
 } from "assets/jss/material-kit-react.js";
 
 const paginationStyle = {
@@ -110,6 +111,19 @@ const paginationStyle = {
       color: "#FFFFFF",
       boxShadow:
         "0 4px 5px 0 rgba(244, 67, 54, 0.14), 0 1px 10px 0 rgba(244, 67, 54, 0.12), 0 2px 4px -1px rgba(244, 67, 54, 0.2)"
+    },
+    "&:hover,&:focus": {
+      zIndex: "2",
+      cursor: "default"
+    }
+  },
+  green: {
+    "&,&:hover,&:focus": {
+      backgroundColor: greenColor,
+      borderColor: greenColor,
+      color: "#FFFFFF",
+      boxShadow:
+        "0 2px 2px 0 rgba(144, 204, 159, 0.14), 0 3px 1px -2px rgba(144, 204, 159, 0.2), 0 1px 5px 0 rgba(144, 204, 159, 0.12)"
     },
     "&:hover,&:focus": {
       zIndex: "2",

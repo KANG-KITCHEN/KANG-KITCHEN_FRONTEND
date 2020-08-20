@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
-import { Router, Route, Switch } from "react-router-dom";
+import { Route, Switch, BrowserRouter as Router} from "react-router-dom";
 import "./index.css";
 
 import "assets/scss/material-kit-react.scss?v=1.9.0";
@@ -16,7 +16,9 @@ import LoginPage from "views/LoginPage/LoginPage.js";
 import SignUpPage from "views/SignUpPage/SignUpPage.js";
 import SignInPage from "views/SignInPage/SignInPage.js";
 import LandingPage from "views/LandingPage/LandingPage.js";
+import AboutPage from "views/AboutPage/AboutPage.js";
 import Component from "views/Components/Components.js";
+import ProfilePage from "views/ProfilePage/ProfilePage.js";
 
 var hist = createBrowserHistory();
 
@@ -37,6 +39,8 @@ ReactDOM.render(
         <Route path="/signup-page" component={SignUpPage} />
         <Route path="/signin-page" component={SignInPage} />
         <Route path="/landing-page" component={LandingPage} />
+        <Route path="/about-page" component={AboutPage} />
+        <Route path="/profile-page" component={ProfilePage} />
         <Route path="/component" component={Component} />
       </Switch>
     </Router>

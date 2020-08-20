@@ -5,12 +5,18 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 // @material-ui/icons
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Typography from '@material-ui/core/Typography';
 
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
+import HeaderLinks from "components/Header/HeaderLinks.js";
 import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 
@@ -23,44 +29,21 @@ import BoardSection from "./Sections/BoardSection.js";
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
 
-function datas(props) {
-    return (
-        <div>
-            <BoardSection />
-        </div>
-    );
-}
-
-export default function InfoPage(props) {
+export default function BoardPage(props) {
     const classes = useStyles();
     const { ...rest } = props;
+    const imageClasses = classNames(
+        classes.imgRaised,
+        classes.imgRoundedCircle,
+        classes.imgFluid
+    );
 
     return (
         <div>
             <Header
                 brand="DORURI"
                 routes={dashboardRoutes}
-                rightLinks={
-                    <List className={classes.list}>
-                        <Button
-                            href="#pablo"
-                            className={classes.navLink}
-                            onClick={e => e.preventDefault()}
-                            color="transparent"
-                        >
-                            SIGN IN
-                  </Button>
-                        <Button
-                            href="#pablo"
-                            className={classes.registerNavLink}
-                            onClick={e => e.preventDefault()}
-                            color="green"
-                            round
-                        >
-                            SIGN UP
-                  </Button>
-                    </List>
-                }
+                rightLinks={<HeaderLinks />}
                 fixed
                 changeColorOnScroll={{
                     height: 400,
@@ -68,24 +51,18 @@ export default function InfoPage(props) {
                 }}
                 {...rest}
             />
-            <Parallax image={require("assets/img/bg3.jpg")}>
-                <div className={classes.container}>
-                    <GridContainer>
-                        <GridItem>
-                            <div className={classes.brand}>
-                                <h1 className={classes.title}>Project Title</h1>
-                                <h3 className={classes.subtitle}>board...</h3>
-                            </div>
-                            <SearchSection />
-                        </GridItem>
-                    </GridContainer>
-                </div>
-            </Parallax>
-
+            <Parallax small filter image={require("assets/img/aboutbg.jpg")} />
             <div className={classNames(classes.main, classes.mainRaised)}>
-                {datas(props)}
+                <div>
+                    <div className={classes.container}>
+                        <GridContainer justify="center">
+                            <GridItem>
+                                <BoardSection />
+                            </GridItem>
+                        </GridContainer>
+                    </div>
+                </div>
             </div>
-
             <Footer />
         </div>
     );
