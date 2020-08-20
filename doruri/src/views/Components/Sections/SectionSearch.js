@@ -3,6 +3,7 @@ import React from "react";
 //import Slider from "nouislider";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 //import InputAdornment from "@material-ui/core/InputAdornment";
 //import FormControlLabel from "@material-ui/core/FormControlLabel";
 //import Checkbox from "@material-ui/core/Checkbox";
@@ -51,9 +52,11 @@ export default function SectionSearch({ text }) {
                         />
                     </GridItem>
                     <GridItem xs={12} sm={4} md={4} lg={2}>
+                    <Link to="/search-page">
                         <IconButton aria-label="search">
                             <SearchIcon />
                         </IconButton>
+                    </Link>    
                     </GridItem>
                 </GridContainer>
             </div>

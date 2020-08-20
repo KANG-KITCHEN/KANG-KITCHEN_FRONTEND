@@ -27,7 +27,7 @@ export default function BoardSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={5}>
-          <h2 className={classes.title}>최근 회수 및 판매 중지 식품</h2>
+          <h2 className={classes.title}>안성탕면</h2>
         </GridItem>
         <GridItem xs={12} sm={12} md={10}>
           <hr></hr><br />
@@ -36,22 +36,17 @@ export default function BoardSection() {
           <Card className={classes.root}>
             <CardContent>
               <Typography className={classes.title} color="textSecondary" gutterBottom>
-                Word of the Day
+              (주)농심
               </Typography>
               <Typography variant="h5" component="h2">
-                be{bull}nev{bull}o{bull}lent
+                수출안성탕면
               </Typography>
               <Typography className={classes.pos} color="textSecondary">
-                adjective
-              </Typography>
-              <Typography variant="body2" component="p">
-                well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
+                20050810
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
+              <Button size="small">자세히 보기</Button>
             </CardActions>
           </Card>
         </GridItem>
@@ -60,22 +55,17 @@ export default function BoardSection() {
           <Card className={classes.root}>
             <CardContent>
               <Typography className={classes.title} color="textSecondary" gutterBottom>
-                Word of the Day
+              (주)농심
               </Typography>
               <Typography variant="h5" component="h2">
-                be{bull}nev{bull}o{bull}lent
+              수출해물안성탕면
               </Typography>
               <Typography className={classes.pos} color="textSecondary">
-                adjective
-              </Typography>
-              <Typography variant="body2" component="p">
-                well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
+              20190814
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
+            <Button size="small">자세히 보기</Button>
             </CardActions>
           </Card>
         </GridItem>
@@ -84,22 +74,17 @@ export default function BoardSection() {
           <Card className={classes.root}>
             <CardContent>
               <Typography className={classes.title} color="textSecondary" gutterBottom>
-                Word of the Day
+              (주)농심
               </Typography>
               <Typography variant="h5" component="h2">
-                be{bull}nev{bull}o{bull}lent
+              안성탕면
               </Typography>
               <Typography className={classes.pos} color="textSecondary">
-                adjective
-              </Typography>
-              <Typography variant="body2" component="p">
-                well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
+              20060517
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
+            <Button size="small">자세히 보기</Button>
             </CardActions>
           </Card>
         </GridItem>
@@ -108,22 +93,17 @@ export default function BoardSection() {
           <Card className={classes.root}>
             <CardContent>
               <Typography className={classes.title} color="textSecondary" gutterBottom>
-                Word of the Day
+              (주)농심
               </Typography>
               <Typography variant="h5" component="h2">
-                be{bull}nev{bull}o{bull}lent
+              안성탕면(단체급식용)
               </Typography>
               <Typography className={classes.pos} color="textSecondary">
-                adjective
-              </Typography>
-              <Typography variant="body2" component="p">
-                well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
+                20090630
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
+            <Button size="small">자세히 보기</Button>
             </CardActions>
           </Card>
         </GridItem>
@@ -132,22 +112,17 @@ export default function BoardSection() {
           <Card className={classes.root}>
             <CardContent>
               <Typography className={classes.title} color="textSecondary" gutterBottom>
-                Word of the Day
+              (주)농심
               </Typography>
               <Typography variant="h5" component="h2">
-                be{bull}nev{bull}o{bull}lent
+              안성탕면컵
               </Typography>
               <Typography className={classes.pos} color="textSecondary">
-                adjective
-              </Typography>
-              <Typography variant="body2" component="p">
-                well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
+              20100908
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
+            <Button size="small">자세히 보기</Button>
             </CardActions>
           </Card>
         </GridItem>
@@ -156,22 +131,17 @@ export default function BoardSection() {
           <Card className={classes.root}>
             <CardContent>
               <Typography className={classes.title} color="textSecondary" gutterBottom>
-                Word of the Day
+              (주)농심
               </Typography>
               <Typography variant="h5" component="h2">
-                be{bull}nev{bull}o{bull}lent
+              안성탕면컵 분말스프
               </Typography>
               <Typography className={classes.pos} color="textSecondary">
-                adjective
-              </Typography>
-              <Typography variant="body2" component="p">
-                well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
+              20100909
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
+            <Button size="small">자세히 보기</Button>
             </CardActions>
           </Card>
         </GridItem>
@@ -180,22 +150,17 @@ export default function BoardSection() {
           <Card className={classes.root}>
             <CardContent>
               <Typography className={classes.title} color="textSecondary" gutterBottom>
-                Word of the Day
+              (주)농심
               </Typography>
               <Typography variant="h5" component="h2">
-                be{bull}nev{bull}o{bull}lent
+                일본 안성탕면
               </Typography>
               <Typography className={classes.pos} color="textSecondary">
-                adjective
-              </Typography>
-              <Typography variant="body2" component="p">
-                well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
+              20030610
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
+            <Button size="small">자세히 보기</Button>
             </CardActions>
           </Card>
         </GridItem>
@@ -204,22 +169,17 @@ export default function BoardSection() {
           <Card className={classes.root}>
             <CardContent>
               <Typography className={classes.title} color="textSecondary" gutterBottom>
-                Word of the Day
+              (주)농심
               </Typography>
               <Typography variant="h5" component="h2">
-                be{bull}nev{bull}o{bull}lent
+              쫄병 안성탕면맛
               </Typography>
               <Typography className={classes.pos} color="textSecondary">
-                adjective
-              </Typography>
-              <Typography variant="body2" component="p">
-                well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
+              19720154001
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
+            <Button size="small">자세히 보기</Button>
             </CardActions>
           </Card>
         </GridItem>
@@ -228,22 +188,17 @@ export default function BoardSection() {
           <Card className={classes.root}>
             <CardContent>
               <Typography className={classes.title} color="textSecondary" gutterBottom>
-                Word of the Day
+              (주)농심
               </Typography>
               <Typography variant="h5" component="h2">
-                be{bull}nev{bull}o{bull}lent
+              해물안성탕면
               </Typography>
               <Typography className={classes.pos} color="textSecondary">
-                adjective
-              </Typography>
-              <Typography variant="body2" component="p">
-                well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
+              20180828
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
+            <Button size="small">자세히 보기</Button>
             </CardActions>
           </Card>
         </GridItem>
@@ -254,9 +209,9 @@ export default function BoardSection() {
           <Paginations
             pages={[
               { text: "PREV" },
-              { text: 1 },
+              { active: true, text: 1 },
               { text: 2 },
-              { active: true, text: 3 },
+              { text: 3 },
               { text: 4 },
               { text: 5 },
               { text: "NEXT" }
