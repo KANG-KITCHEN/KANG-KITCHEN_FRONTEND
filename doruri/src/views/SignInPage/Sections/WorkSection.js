@@ -55,7 +55,7 @@ export default function WorkSection() {
               <GridItem xs={12} sm={12} md={4}>
                 <section>
                   <a href="http://localhost:8080/oauth2/authorization/kakao">
-                    <Button color="yellow" fullWidth="true" round="true">
+                    <Button color="yellow" fullWidth round>
                       <img src={kakaoIcon} lat="kakaoIcon"/> 
                       카카오 로그인
                     </Button>
