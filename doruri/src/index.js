@@ -19,6 +19,7 @@ import LandingPage from "views/LandingPage/LandingPage.js";
 import AboutPage from "views/AboutPage/AboutPage.js";
 import Component from "views/Components/Components.js";
 import ProfilePage from "views/ProfilePage/ProfilePage.js";
+import AllergyModal from "views/MainPage/Sections/AllergyModal.js";
 
 var hist = createBrowserHistory();
 
@@ -42,6 +43,7 @@ ReactDOM.render(
         <Route path="/about-page" component={AboutPage} />
         <Route path="/profile-page" component={ProfilePage} />
         <Route path="/component" component={Component} />
+        <Route path="/test" component={AllergyModal} />
       </Switch>
     </Router>
   </MuiThemeProvider>
